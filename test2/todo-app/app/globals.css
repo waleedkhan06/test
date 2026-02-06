@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --foreground: #000;
+  --background: #fff;
+  --muted: #f0f0f0;
+  --muted-foreground: #666;
+  --popover: #fff;
+  --popover-foreground: #000;
+  --border: #e5e5e5;
+  --input: #e5e5e5;
+  --card: #fff;
+  --card-foreground: #000;
+  --primary: #000;
+  --primary-foreground: #fff;
+  --secondary: #f0f0f0;
+  --secondary-foreground: #000;
+  --accent: #f0f0f0;
+  --accent-foreground: #000;
+  --destructive: #ff4444;
+  --destructive-foreground: #fff;
+  --ring: #3b82f6;
+  --radius: 0.5rem;
+  /* Theme transition */
+  --theme-transition: 0.3s ease;
+}
+
+.dark {
+  --foreground: #fff;
+  --background: #000;
+  --muted: #202020;
+  --muted-foreground: #aaa;
+  --popover: #101010;
+  --popover-foreground: #fff;
+  --border: #303030;
+  --input: #303030;
+  --card: #101010;
+  --card-foreground: #fff;
+  --primary: #fff;
+  --primary-foreground: #000;
+  --secondary: #202020;
+  --secondary-foreground: #fff;
+  --accent: #202020;
+  --accent-foreground: #fff;
+  --destructive: #cc0000;
+  --destructive-foreground: #fff;
+  --ring: #60a5fa;
+  /* Theme transition */
+  --theme-transition: 0.3s ease;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color var(--theme-transition), color var(--theme-transition);
+}
+
+/* Smooth theme transitions */
+[data-theme],
+:root {
+  transition: background-color var(--theme-transition), color var(--theme-transition);
+}
